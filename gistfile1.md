@@ -23,7 +23,7 @@ Systemets användargränssnitt är segmenterat för att hantera olika användare
 
 Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna. Backenden tar emot inlämningarna via git, mail eller andra kanaler och placerar dem i någon form av köhanterare som behandlar informationen och presenterar på den frontenden.
 
-Förslag på features:
+## Förslag på features:
 
 - Modern versionshantering för avancerade användare (akademiker/ingenjörer)
 - Flexibel definition av uppgifter
