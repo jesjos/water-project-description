@@ -20,9 +20,11 @@ som baserar sig på modern versionshantering med git.
 Water är en webbapplikation.
 
 Systemets användargränssnitt är segmenterat för att hantera olika användares behov. Inlämning kan ske genom olika kanaler - till exempel direkt push till ett repositorie i systemet från versionshanteringsklienten, filuppladdning i webbläsare eller som bifogade filer i ett e-postmeddelande.
-Även handledarna kan interagera på olika sätt med systemet.
+Även handledarna kan interagera på olika sätt med systemet. Det ska vara möjligt att använda avancerade funktioner som relaterar till versionshantering, men handledare ska även kunna få uppgifterna mailade till sig och kunna godkänna med ett mailsvar som systemet bearbetar.
 
 Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna. Backenden tar emot inlämningarna via de olika kanalerna och placerar dem i någon form av köhanterare som behandlar informationen och presenterar den på frontenden.
+
+Systemet ska baseras på en befintlig öppen plattform. 
 
 ## Förslag på features:
 
@@ -53,5 +55,3 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
 - Bestämd rättningsordning för handledarna
   - En retur på labb 1 ska rättas före en förstainlämning på labb 2.
 - Möjlighet till anonym gransking av labbarna, på samma vis som tentarättningen.
-
-Systemet ska baseras på en befintlig öppen plattform. 
