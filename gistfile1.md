@@ -58,3 +58,9 @@ Systemet ska baseras på en befintlig öppen plattform.
 
 ## Kostnader
 Det kan bli nödvändigt att hyra in server-resurser i form av VPS eller någon molntjänst.
+
+## Förslagslämnare
+
+- [Linus Oleander](http://github.com/oleander)
+- [Jesper Josefsson](http://github.com/jesjos)
+- [Arash Rouhani](https://github.com/Tarrasch)
