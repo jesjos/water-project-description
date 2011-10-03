@@ -28,9 +28,7 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
 - Modern versionshantering för avancerade användare (akademiker/ingenjörer)
 - Flexibel definition av uppgifter
   - Möjligt att definiera delmål som godkänns separat
-- Kraftfullt översiktsverktyg:
-  - Skillnader mellan första inlämning och retur
-  - Skillnader mellan filer
+- Enkel översikt mellan första inlämning och retur
 - Kommentarer knutna till specifika rader i koden
   - Tvåvägskommunikation möjlig - kommentarer på kommentarer.
 - Inbyggd plagiatkontroll
@@ -40,5 +38,8 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
 - Kursansvarig kan definiera valideringar för inlämningsuppgifterna. Till exempel kontrollera att en given radbredd inte överskrids. Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
 - Readme-filer integrerade i systemet - en fil som uppfyller definitionen av en readme-fil renderas automatiskt på inlämningsuppgiftssidan
 - Online-editering - små 
+- Bestämd rättningsordning för handledarna
+  - En retur på labb 1 ska rattas före en förstainlamning på labb 2.
+- Möjlighet till anonym gransking av labbarna, på samma vis som tentarättningen.
 
 Systemet ska baseras på en befintlig öppen plattform. 
