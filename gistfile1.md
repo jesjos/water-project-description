@@ -55,3 +55,6 @@ Systemet ska baseras på en befintlig öppen plattform.
 - Bestämd rättningsordning för handledarna
   - En retur på labb 1 ska rättas före en förstainlämning på labb 2.
 - Möjlighet till anonym gransking av labbarna, på samma vis som tentarättningen.
+
+## Kostnader
+Det kan bli nödvändigt att hyra in server-resurser i form av VPS eller någon molntjänst.
