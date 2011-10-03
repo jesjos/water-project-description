@@ -32,7 +32,7 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
 - Kommentarer knutna till specifika rader i koden
   - Tvåvägskommunikation möjlig - kommentarer på kommentarer.
 - Inbyggd plagiatkontroll
-- Statistik - t.ex:
+- Statistik
   - Programspråksanvändning
   - Antal kodrader
   - Andel godkända samt antal försök
@@ -42,9 +42,10 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
 - Progressbar för rättningen
   - Det går att se hur många grupper som har fått sin uppgift rättad
   - Studenter ser hur många som ligger före i rättningskön.
-- Kursansvarig kan definiera automatiska valideringar för inlämningsuppgifterna
+- Kursansvarig kan definiera automatiska **valideringar** för inlämningsuppgifterna
   - Möjlighet att validera en given radbredd inte är överskrids
   - Automatisk körning av fördefinierade unittester.
+  - Definera vilka filer som ska ingå i inlämningen, t.ex. *report.pdf*
   - Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
 - Readme-filer integrerade i systemet - en fil som uppfyller definitionen av en readme-fil renderas automatiskt på inlämningsuppgiftssidan
 - Online-editering - små 
