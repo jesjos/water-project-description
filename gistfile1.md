@@ -43,7 +43,7 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
   - Det går att se hur många grupper som har fått sin uppgift rättad
   - Studenter ser hur många som ligger före i rättningskön.
 - Kursansvarig kan definiera automatiska **valideringar** för inlämningsuppgifterna
-  - Möjlighet att validera en given radbredd inte är överskrids
+  - Möjlighet att validera en given radbredd inte överskrids
   - Automatisk körning av fördefinierade unittester.
   - Definera vilka filer som ska ingå i inlämningen, t.ex. *report.pdf*
   - Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
