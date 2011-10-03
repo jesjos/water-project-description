@@ -48,9 +48,9 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
   - Definera vilka filer som ska ingå i inlämningen, t.ex. *report.pdf*
   - Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
 - Readme-filer integrerade i systemet - en fil som uppfyller definitionen av en readme-fil renderas automatiskt på inlämningsuppgiftssidan
-- Online-editering - små 
+- Online-editering
 - Bestämd rättningsordning för handledarna
-  - En retur på labb 1 ska rattas före en förstainlamning på labb 2.
+  - En retur på labb 1 ska rättas före en förstainlamning på labb 2.
 - Möjlighet till anonym gransking av labbarna, på samma vis som tentarättningen.
 
 Systemet ska baseras på en befintlig öppen plattform. 
