@@ -25,8 +25,10 @@ Systemets användargränssnitt är segmenterat för att hantera olika användare
 Förslag på features:
 
 - Modern versionshantering för avancerade användare (akademiker/ingenjörer)
-- Kraftfull översiktsverktyg:
-  - Skillnader mellan första inlämnings och retur
+- Flexibel definition av uppgifter
+  - Möjligt att definiera delmål som godkänns separat
+- Kraftfullt översiktsverktyg:
+  - Skillnader mellan första inlämning och retur
   - Skillnader mellan filer
 - Kommentarer knutna till specifika rader i koden
   - Tvåvägskommunikation möjlig - kommentarer på kommentarer.
