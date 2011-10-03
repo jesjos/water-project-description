@@ -18,9 +18,10 @@ Därtill är Fire-systemet, det nuvarande systemet för hantering av inlämnings
 Uppgiften är att konstruera Water: ett system för hantering av inlämningsuppgifter 
 som baserar sig på modern versionshantering med git. 
 Water är en webbapplikation.
-Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna.
 Systemets användargränssnitt är segmenterat för att hantera olika användares behov. Inlämning kan ske genom olika kanaler - till exempel direkt push till ett repositorie i systemet från versionshanteringsklienten, filuppladdning i webbläsare eller som bifogade filer i ett e-postmeddelande.
 Även handledarna kan interagera på olika sätt med systemet.
+
+Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna. Backenden tar emot inlämningarna via git, mail eller andra kanaler och placerar dem i någon form av köhanterare som behandlar informationen och presenterar på den frontenden.
 
 Förslag på features:
 
@@ -38,5 +39,6 @@ Förslag på features:
 - Köhantering för rättning
 - Kursansvarig kan definiera valideringar för inlämningsuppgifterna. Till exempel kontrollera att en given radbredd inte överskrids. Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
 - Readme-filer integrerade i systemet - en fil som uppfyller definitionen av en readme-fil renderas automatiskt på inlämningsuppgiftssidan
+- Online-editering - små 
 
 Systemet ska baseras på en befintlig öppen plattform. 
