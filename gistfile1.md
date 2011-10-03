@@ -32,10 +32,20 @@ Systemet består av en backend som bland annat hanterar git-repositorier samt en
 - Kommentarer knutna till specifika rader i koden
   - Tvåvägskommunikation möjlig - kommentarer på kommentarer.
 - Inbyggd plagiatkontroll
-- Statistik - t.ex. över vilka språk som används, antal kodrader, olika författares andel av kodbasen
-- Progressbar för rättningen - det går att se hur många grupper som har fått sin uppgift rättad
-- Köhantering för rättning
-- Kursansvarig kan definiera valideringar för inlämningsuppgifterna. Till exempel kontrollera att en given radbredd inte överskrids. Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
+- Statistik - t.ex:
+  - Programspråksanvändning
+  - Antal kodrader
+  - Andel godkända samt antal försök
+  - Olika studenters andel av kodbasen inom en grupp
+  - Kursansvarig kan se hur många inlämningar som är avklarade
+- Deadline för handledare
+- Progressbar för rättningen
+  - Det går att se hur många grupper som har fått sin uppgift rättad
+  - Studenter ser hur många som ligger före i rättningskön.
+- Kursansvarig kan definiera automatiska valideringar för inlämningsuppgifterna
+  - Möjlighet att validera en given radbredd inte är överskrids
+  - Automatisk körning av fördefinierade unittester.
+  - Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
 - Readme-filer integrerade i systemet - en fil som uppfyller definitionen av en readme-fil renderas automatiskt på inlämningsuppgiftssidan
 - Online-editering - små 
 - Bestämd rättningsordning för handledarna
