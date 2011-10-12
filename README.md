@@ -20,41 +20,23 @@ som baserar sig på modern versionshantering med git.
 Water är en webbapplikation.
 
 Systemets användargränssnitt är segmenterat för att hantera olika användares behov. Inlämning kan ske genom olika kanaler - till exempel direkt push till ett repositorie i systemet från versionshanteringsklienten, filuppladdning i webbläsare eller som bifogade filer i ett e-postmeddelande.
+
+Studenter kan editera filerna direkt i webbläsaren, kan se hur rättningsarbetet fortskrider (hur många grupper som har fått sina inlämningar rättade) och möjlighet finns att lämna in anonymt om kursansvarig väljer det.
 Även handledarna kan interagera på olika sätt med systemet. Det ska vara möjligt att använda avancerade funktioner som relaterar till versionshantering, men handledare ska även kunna få uppgifterna mailade till sig och kunna godkänna med ett mailsvar som systemet bearbetar.
 
-Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna. Backenden tar emot inlämningarna via de olika kanalerna och placerar dem i någon form av köhanterare som behandlar informationen och presenterar den på frontenden.
+Handledarna erbjuds även andra tjänster. Flexibel definition av uppgifter med delmål. Automatisk validering kan användas för att snabba upp rättningsprocessen genom att direkt förkasta inlämningar som inte uppfyller vissa tekniska krav - till exempel mappstruktur eller maximal radbredd. Kursansvarig kan även definiera unittest som automatiskt körs när uppgiften lämnas in. Studenten får snabb återkoppling om inlämningen refuseras. Kommentarer kan knytas till specifika kodrader vilket möjliggör tvåvägskommunikation mellan handledare och studenter. Automatisk plagiatkontroll och avancerad insamling av statistik finns inbyggt i systemet. Vid returer ger systemet handledaren en översikt där det framgår vilka förändringar som har skett. 
+
+Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna. Backenden tar emot inlämningarna och handledarkommunikation via de olika kanalerna och placerar dem i någon form av köhanterare som behandlar informationen och presenterar den på frontenden.
 
 Systemet ska baseras på en befintlig öppen plattform. 
 
 ## Förslag på features:
 
-- Modern versionshantering för avancerade användare (akademiker/ingenjörer)
-- Flexibel definition av uppgifter
-  - Möjligt att definiera delmål som godkänns separat
 - Tydlig översikt över skillnader mellan en första inlämning och successiva svar på returer - handledaren ser snabbt vad som har förändrats
-- Kommentarer knutna till specifika rader i koden
-  - Tvåvägskommunikation möjlig - kommentarer på kommentarer.
-- Inbyggd plagiatkontroll
-- Statistik
-  - Programspråksanvändning
-  - Antal kodrader
-  - Andel godkända samt antal försök
-  - Olika studenters andel av kodbasen inom en grupp
-  - Kursansvarig kan se hur många inlämningar som är avklarade
 - Deadline för handledare
-- Progressbar för rättningen
-  - Det går att se hur många grupper som har fått sin uppgift rättad
-  - Studenter ser hur många som ligger före i rättningskön.
-- Kursansvarig kan definiera automatiska **valideringar** för inlämningsuppgifterna
-  - Möjlighet att validera en given radbredd inte överskrids
-  - Automatisk körning av fördefinierade unittester.
-  - Definera vilka filer som ska ingå i inlämningen, t.ex. *report.pdf*
-  - Inlämningar som inte klarar av valideringen kan nekas direkt. Sparar mycket handledartid.
 - Readme-filer integrerade i systemet - en fil som uppfyller definitionen av en readme-fil renderas automatiskt på inlämningsuppgiftssidan
-- Online-editering
 - Bestämd rättningsordning för handledarna
   - En retur på labb 1 ska rättas före en förstainlämning på labb 2.
-- Möjlighet till anonym gransking av labbarna, på samma vis som tentarättningen.
 
 ## Kostnader
 Det kan bli nödvändigt att hyra in server-resurser i form av VPS eller någon molntjänst.

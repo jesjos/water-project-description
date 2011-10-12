@@ -1,0 +1,115 @@
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}			% See geometry.pdf to learn the layout options.
+								% There are lots.
+								
+\geometry{letterpaper}			% ... or a4paper or a5paper or ... 
+%\geometry{landscape}			% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}	% Activate to begin paragraphs with an empty
+								% line rather than an indent
+
+\usepackage{ifpdf}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+
+% Definitions
+\def\myauthor{Author}
+\def\mytitle{Title}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+
+
+
+%
+%	PDF Stuff
+%
+
+\ifpdf
+  \pdfoutput=1
+  \usepackage[
+  	plainpages=false,
+  	pdfpagelabels,
+  	bookmarksnumbered,
+  	pdftitle={\mytitle},
+  	pagebackref,
+  	pdfauthor={\myauthor},
+  	pdfkeywords={\mykeywords}
+  	]{hyperref}
+  \usepackage{memhfixc}
+\fi
+
+
+% Title Information
+\title{Water: en ersättning för Fire, baserad på versionshantering}
+\author{Jesper Josefsson, Linus Oleander, Arash Rouhani}
+
+\begin{document}
+
+
+% Title Page
+
+\maketitle
+
+%
+% Main Content
+%
+
+
+% Layout settings
+\setlength{\parindent}{1em}
+
+\section{Bakgrund}
+\label{bakgrund:}
+
+Arbetsflöden som används på Chalmers bör spegla dem som används på hög nivå i branschen.
+Där ingår modern versionhantering. Genom att införliva versionhantering i arbetet med inlämningsuppgifter
+läggs en stabil grund inför arbetslivet.
+Fire, det nuvarande systemet för hantering av inlämningsuppgifter, uppmuntrar inte till ett strukturerat arbetssätt och brister även av följande anledningar:
+
+\begin{itemize}
+
+\item Nya användaridentiteter för varje kurs
+\item Filuppladdningen fungerar dåligt, filer måste laddas upp en och en
+\item Ingen inbyggd validering
+\item Kommunikation mellan rättare och inlämnare fungerar dåligt
+\item Stelt användargränssnitt
+\end{itemize}
+
+\section{Projektbeskrivning / Problembeskrivning}
+\label{projektbeskrivningproblembeskrivning}
+
+Uppgiften är att konstruera Water: ett system för hantering av inlämningsuppgifter 
+som baserar sig på modern versionshantering med git. 
+Water är en webbapplikation. \\
+
+Systemets användargränssnitt är segmenterat för att hantera olika användares behov. Inlämning kan ske genom olika kanaler - till exempel direkt push till ett repositorie i systemet från versionshanteringsklienten, filuppladdning i webbläsare eller som bifogade filer i ett e-postmeddelande. \\
+
+Studenter kan editera filerna direkt i webbläsaren, kan se hur rättningsarbetet fortskrider (hur många grupper som har fått sina inlämningar rättade) och möjlighet finns att lämna in anonymt om kursansvarig väljer det.
+Även handledarna kan interagera på olika sätt med systemet. Det ska vara möjligt att använda avancerade funktioner som relaterar till versionshantering, men handledare ska även kunna få uppgifterna mailade till sig och kunna godkänna med ett mailsvar som systemet bearbetar. \\
+
+Handledarna erbjuds även andra tjänster. Flexibel definition av uppgifter med delmål. Automatisk validering kan användas för att snabba upp rättningsprocessen genom att direkt förkasta inlämningar som inte uppfyller vissa tekniska krav - till exempel mappstruktur eller maximal radbredd. Kursansvarig kan även definiera unittest som automatiskt körs när uppgiften lämnas in. Studenten får snabb återkoppling om inlämningen refuseras. Kommentarer kan knytas till specifika kodrader vilket möjliggör tvåvägskommunikation mellan handledare och studenter. Automatisk plagiatkontroll och avancerad insamling av statistik finns inbyggt i systemet. Vid returer ger systemet handledaren en översikt där det framgår vilka förändringar som har skett. \\
+
+Systemet består av en backend som bland annat hanterar git-repositorier samt en frontend som presenterar repositorierna och möjliggör inlämning och rättning och uppgifterna. Backenden tar emot inlämningarna och handledarkommunikation via de olika kanalerna och placerar dem i någon form av köhanterare som behandlar informationen och presenterar den på frontenden.
+\section{Kostnader}
+\label{kostnader}
+
+Det kan bli nödvändigt att hyra in server-resurser i form av VPS eller någon molntjänst. Kostnaderna är ändå väsentligt mindre än 3000 kr.
+
+\section{Förslagslämnare}
+\label{frslagslmnare}
+
+\begin{itemize}
+
+\item \href{http://github.com/oleander}{Linus Oleander}\footnote{\href{http://github.com/oleander}{http://github.com/oleander}}
+\item \href{http://github.com/jesjos}{Jesper Josefsson}\footnote{\href{http://github.com/jesjos}{http://github.com/jesjos}}
+\item \href{https://github.com/Tarrasch}{Arash Rouhani}\footnote{\href{https://github.com/Tarrasch}{https://github.com/Tarrasch}}
+\end{itemize}
+
+% Bibliography
+\bibliographystyle{\mybibliostyle}
+\mybibliocommand
+
+\end{document}
